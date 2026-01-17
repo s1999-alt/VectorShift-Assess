@@ -13,12 +13,12 @@ export const TextNode = ({ id, data }) => {
     }
   }, [currText]);
 
-  
+
   useEffect(() => {
- 
+
     const regex = /\{\{\s*([a-zA-Z_$][a-zA-Z0-9_$]*)\s*\}\}/g;
     const matches = [...currText.matchAll(regex)];
-   
+
     const uniqueVars = [...new Set(matches.map(m => m[1]))];
     const newHandles = uniqueVars.map(variable => ({ id: `${id}-${variable}` }));
     setHandles(newHandles);
@@ -30,6 +30,7 @@ export const TextNode = ({ id, data }) => {
 
   return (
     <BaseNode
+      id={id}
       title="Text"
       inputs={handles}
       outputs={[{ id: `${id}-output` }]}

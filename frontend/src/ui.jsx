@@ -7,7 +7,7 @@ import { LLMNode } from './nodes/LLMNode';
 import { OutputNode } from './nodes/OutputNode';
 import { TextNode } from './nodes/TextNode';
 
-// import { DateNode, NoteNode, FilterNode, TransformNode, APINode } from './nodes/exampleNodes';
+import { DateNode, NoteNode, FilterNode, TransformNode, APINode } from './nodes/exampleNodes';
 
 import 'reactflow/dist/style.css';
 
