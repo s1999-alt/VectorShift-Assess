@@ -1,0 +1,37 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Virtual environment
+# Change "venv" to the name of your virtual environment folder if it's different
+venv/
+env/
+
+# IDE-specific files
+.idea/ # For PyCharm
+.vscode/ # For VS Code
+
+# System/OS specific files
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Test/coverage artifacts
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Database files (if using SQLite for local development)
+*.db
+*.sqlite3
+test.db
+
+# FastAPI/Uvicorn specific
+# If you have specific log files or generated content you want to ignore, add them here.
+log.txt
